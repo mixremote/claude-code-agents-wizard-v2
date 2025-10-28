@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "env": {}
+    },
+    "wordpress": {
+      "command": "npx",
+      "args": ["-y", "server-wp-mcp"],
+      "env": {
+        "WP_URL": "https://yoursite.com",
+        "WP_USERNAME": "admin",
+        "WP_APP_PASSWORD": "your-app-password-here"
+      }
+    },
+    "chrome-devtools": {
+      "command": "chrome-devtools-mcp",
+      "args": []
+    }
+  }
+}
